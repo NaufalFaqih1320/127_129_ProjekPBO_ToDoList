@@ -9,19 +9,27 @@ package model;
  * @author ASUS
  */
 
+// Class AcaraTask merupakan turunan dari class Task
+// yang digunakan untuk task jenis acara
 public class AcaraTask extends Task {
-
+    // Constructor untuk mengisi data task acara
     public AcaraTask(int id, String title, String description, String deadline, boolean completed) {
+        
+        // Memanggil constructor dari parent class Task
         super(id, title, description, deadline, completed);
     }
-
+    
+    // Override method displayInfo dari class Task
     @Override
     public String displayInfo() {
+        // Mengembalikan informasi task acara
         return "Acara Task : " + title;
     }
-
+    
+    // Override method getType dari class Task
     @Override
     public String getType() {
+        // Mengembalikan tipe task
         return "Acara";
     }
 }
