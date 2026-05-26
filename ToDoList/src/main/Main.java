@@ -7,11 +7,13 @@ package main;
 import javax.swing.SwingUtilities;
 import mvc.MainFrame;
 
+// Class utama untuk menjalankan aplikasi ToDo List
 public class Main {
 
     public static void main(String[] args) {
-
+        // Menjalankan GUI menggunakan SwingUtilities
         SwingUtilities.invokeLater(() -> {
+            // Menampilkan tampilan utama aplikasi
             new MainFrame().setVisible(true);
         });
     }
